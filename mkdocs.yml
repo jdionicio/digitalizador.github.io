@@ -1,0 +1,77 @@
+site_name: Digitalizador VUCEM
+site_url: https://digitalizador.quiana.app
+theme:
+  name: material
+  font: 
+    text: Merriweather Sans
+    code: Red Hat Mono
+  logo: assets/VUCER_logo.png
+  favicon: assets/favicon.ico
+  features:
+    - navigation.footer
+    - navigation.expand
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: black
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: indigo
+      accent: red
+  # Custom CSS
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - md_in_html
+  - pymdownx.blocks.caption
+
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/jdionicio
+    - icon: simple/facebook
+      link: https://www.facebook.com/digitalizador
+
+copyright: Copyright © 2025 - Quiana Border Technologies.
+
+nav:
+  - Inicio: index.md
+  - Introducción: Introduccion.md
+  - Acceso: acceso.md
+  - Módulos: modulos.md
+  # - Dashboard: dashboard.md
+  - Digitalizador: digitalizador.md
+  - Buscador: buscador.md
+  - Digitalizaciones:
+      - Digitalización Múltiple: Digitalizaciones/mulitpledigi.md
+      - Digitalización Simple: Digitalizaciones/singledigi.md
+      - Ejemplos Digitalización: Digitalizaciones/ejemplosdigi.md
+  - Acciones: acciones.md
+  - Acuses: acuses.md
+  - Configuraciones : configuraciones.md
+  - Dependencias: dependencias.md
+  - Contactos: contacto.md
